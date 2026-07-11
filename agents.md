@@ -1,11 +1,12 @@
 # Multi-Agent Architecture
 
-## Orchestrator Agent
-Manages the pipeline flow and user chat interface.
+## Orchestrator Agent (Graph-Router)
+Manages the pipeline flow and uses the Knowledge Graph (`graph/pos_ontology.json`) to analyze the systemic impact of rule changes across all related categories.
 
 ## Parsing Agent
 Specialized in reading Python pandas outputs and mapping complex, floating Excel modifiers to base product codes.
 
-## Validation Agent
-Acts as the enterprise gatekeeper, checking the final JSON schema against Infor ION requirements (e.g., flagging $0.00 base prices).
-Communication with the Infor ION backend is strictly handled via the local MCP (Model Context Protocol) server located in `mcp_server/server.py`. The Validation Agent relies exclusively on this standardized transport layer instead of fragile, hard-coded API scripts.
+## Security Triad
+- **Red Team Agent:** Injects "Slop Squatting" anomalies into `/data/raw` to test the system's defenses.
+- **Blue Team (Validation) Agent:** Acts as the enterprise gatekeeper, strictly checking schemas against Infor ION requirements via the local MCP server (`mcp_server/server.py`).
+- **Green Team Agent:** Attempts to auto-refactor or quarantine anomalies flagged by the Blue Team.

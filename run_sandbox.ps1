@@ -20,7 +20,7 @@ if (-Not (Test-Path $venvDir)) {
 $pythonExe = Join-Path $venvDir "Scripts\python.exe"
 $pipExe = Join-Path $venvDir "Scripts\pip.exe"
 
-& $pipExe install -q pandas openpyxl
+& $pipExe install -q pandas openpyxl opentelemetry-api opentelemetry-sdk
 
 Write-Host "Executing Parsing Agent script inside local Sandbox..."
 & $pythonExe (Join-Path $scriptsDir "extract_menu.py")

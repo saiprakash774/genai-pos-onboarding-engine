@@ -1,128 +1,4615 @@
 [
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Caffe Americano",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Americano",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Americano",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Americano",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Apple Crisp Macch",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Apple Crisp Macch",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Apple Crisp Macch",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Apple Crisp Macch",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Latte",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Latte",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Latte",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Latte",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cafe Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cafe Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cafe Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cafe Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cappuccino",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cappuccino",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cappuccino",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cappuccino",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Macchiato",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Macchiato",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Macchiato",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Macchiato",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cinnamon Dolce Latte",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cinnamon Dolce Latte",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cinnamon Dolce Latte",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cinnamon Dolce Latte",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Pike Place",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Pike Place",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Pike Place",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Pike Place",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso",
+        "Category": "Hot Coffee",
+        "Size": "Quad",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso",
+        "Category": "Hot Coffee",
+        "Size": "Triple",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso",
+        "Category": "Hot Coffee",
+        "Size": "Doppio",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso",
+        "Category": "Hot Coffee",
+        "Size": "Solo",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso con Panna",
+        "Category": "Hot Coffee",
+        "Size": "Quad",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso con Panna",
+        "Category": "Hot Coffee",
+        "Size": "Triple",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso con Panna",
+        "Category": "Hot Coffee",
+        "Size": "Doppio",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso con Panna",
+        "Category": "Hot Coffee",
+        "Size": "Solo",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso con Panna",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pike Place Roast",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pike Place Roast",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pike Place Roast",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pike Place Roast",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Latte",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Latte",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Latte",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Latte",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Veranda Roast",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Veranda Roast",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Veranda Roast",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Veranda Roast",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Verona Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Verona Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Verona Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Verona Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Reg Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Reg Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Reg Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Reg Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Decaf Holiday Blend",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "White Choc Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "White Choc Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "White Choc Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "White Choc Mocha",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Flat white",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Flat white",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Flat white",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Flat white",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend Decaf",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend Decaf",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend Decaf",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend Decaf",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Fall Blend",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cortado, Short 8oz",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Brown Sugar Oatmilk Cortado",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Misto",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Misto",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Misto",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Misto",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sunsera Blonde Roast",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sunsera Blonde Roast",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sunsera Blonde Roast",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sunsera Blonde Roast",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sumatra Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sumatra Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sumatra Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Sumatra Dark Roast",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Protein Latte",
+        "Category": "Hot Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Short",
+        "Base_Price": 3.45,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "White Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "White Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.75,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "White Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "White Hot Chocolate",
+        "Category": "Hot Drinks",
+        "Size": "Short",
+        "Base_Price": 3.75,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Steamed Milk",
+        "Category": "Hot Drinks",
+        "Size": "Short",
+        "Base_Price": 2.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Steamed Milk",
+        "Category": "Hot Drinks",
+        "Size": "Tall",
+        "Base_Price": 2.75,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Steamed Milk",
+        "Category": "Hot Drinks",
+        "Size": "Grande",
+        "Base_Price": 3.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Steamed Milk",
+        "Category": "Hot Drinks",
+        "Size": "Venti",
+        "Base_Price": 3.75,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "London Fog Latte",
+        "Category": "Hot Drinks",
+        "Size": "Short",
+        "Base_Price": 4.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "London Fog Latte",
+        "Category": "Hot Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.75,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "London Fog Latte",
+        "Category": "Hot Drinks",
+        "Size": "Grande",
+        "Base_Price": 5.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "London Fog Latte",
+        "Category": "Hot Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.75,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Honey Almondmilk Flat White",
+        "Category": "Hot Drinks",
+        "Size": "Short",
+        "Base_Price": 5.25,
         "Allowed_Modifiers": []
     },
     {
-        "Base_Drink": "",
-        "Category": "",
-        "Size": "",
-        "Base_Price": 0.0,
+        "Base_Drink": "Honey Almondmilk Flat White",
+        "Category": "Hot Drinks",
+        "Size": "Tall",
+        "Base_Price": 5.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Honey Almondmilk Flat White",
+        "Category": "Hot Drinks",
+        "Size": "Grande",
+        "Base_Price": 6.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Honey Almondmilk Flat White",
+        "Category": "Hot Drinks",
+        "Size": "Venti",
+        "Base_Price": 6.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chameleon Nitro CB",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Chameleon Nitro CB",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Chameleon Nitro CB",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Choc Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Choc Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Choc Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cinn Carm Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cinn Carm Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cinn Carm Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cin Caramel Nitro CB",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cin Caramel Nitro CB",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cin Caramel Nitro CB",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cold Brew Coffee",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cold Brew Coffee",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cold Brew Coffee",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cold Brew with CldFm",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cold Brew with CldFm",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Cold Brew with CldFm",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Apple Crisp Mac",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Apple Crisp Mac",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Apple Crisp Mac",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Apple Crisp Mac",
+        "Category": "Cold Coffee",
+        "Size": "Short",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Brwn Sug Shkn E",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Brwn Sug Shkn E",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.75,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Brwn Sug Shkn E",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Americano",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Americano",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Americano",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Latte",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Latte",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Latte",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caffe Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caramel Macch",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caramel Macch",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Caramel Macch",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Ice Cho Amndmlk Shkn",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Ice Cho Amndmlk Shkn",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.75,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Ice Cho Amndmlk Shkn",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Cin Dolce Latte",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Cin Dolce Latte",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Cin Dolce Latte",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Coffee",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Coffee",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Coffee",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Pistachio Latte",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Pistachio Latte",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Pistachio Latte",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Shaken Espr",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Shaken Espr",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.75,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Shaken Espr",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.25,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced WC Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced WC Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced WC Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Nitro Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Nitro Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Nitro Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Cream CB",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "WC Mac Cr Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "WC Mac Cr Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "WC Mac Cr Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Nondairy Vanilla Sweet Cream Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Nondairy Vanilla Sweet Cream Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Nondairy Vanilla Sweet Cream Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Espresso",
+        "Category": "Cold Coffee",
+        "Size": "Solo",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Espresso",
+        "Category": "Cold Coffee",
+        "Size": "Doppio",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Espresso",
+        "Category": "Cold Coffee",
+        "Size": "Triple",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Espresso",
+        "Category": "Cold Coffee",
+        "Size": "Quad",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Salted Crml CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Salted Crml CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Salted Crml CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Salted Crml CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Short",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Van Swt Crm CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Van Swt Crm CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Van Swt Crm CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Van Swt Crm CldBrw",
+        "Category": "Cold Coffee",
+        "Size": "Short",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Van Sweet Cream Nitro Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Van Sweet Cream Nitro Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Raspberry Cream Cold Foam",
+        "Category": "Cold Coffee",
+        "Size": "Short",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Raspberry Cream Cold Foam",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Raspberry Cream Cold Foam",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Raspberry Cream Cold Foam",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Cream Protein Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Cream Protein Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Cream Protein Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Cream Protein Cold Brew",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced SF Vanilla Protein Latte",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced SF Vanilla Protein Latte",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced SF Vanilla Protein Latte",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Vanilla Cream Protein Latte",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Vanilla Cream Protein Latte",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Vanilla Cream Protein Latte",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Dubai Chocolate Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Dubai Chocolate Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Iced Dubai Chocolate Mocha",
+        "Category": "Cold Coffee",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Cold Foam"
+        ]
+    },
+    {
+        "Base_Drink": "Dragon Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Dragon Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Dragon Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Mango Dragon Lem",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Mango Dragon Lem",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Mango Dragon Lem",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Pine Passn Lem R",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Pine Passn Lem R",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Pine Passn Lem R",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Strw Acai Lem R",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Strw Acai Lem R",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Frz Strw Acai Lem R",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Kiwi Starfruit Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Kiwi Starfruit Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Kiwi Starfruit Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lemonade",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lemonade",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lemonade",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lemonade",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Dragon Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Dragon Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Dragon Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Dragonfruit",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Dragonfruit",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Dragonfruit",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Paradise Refresh",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Paradise Refresh",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Paradise Refresh",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pineapple Passn Lem",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pineapple Passn Lem",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pineapple Passn Lem",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pineapple Passion Re",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pineapple Passion Re",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pineapple Passion Re",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pink Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pink Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pink Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strw Acai Lem Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strw Acai Lem Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strw Acai Lem Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Acai",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Acai",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Acai",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Very Berry Hibis Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Very Berry Hibis Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Very Berry Hibis Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Violet Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Violet Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Violet Drink",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Blackberry Sage Refresher",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Blackberry Sage Refresher",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Blackberry Sage Refresher",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Blackberry Sage Lemonade Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Blackberry Sage Lemonade Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Blackberry Sage Lemonade Ref",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Midnight Drink Refresher",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Midnight Drink Refresher",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Midnight Drink Refresher",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced London Fog Latte",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced London Fog Latte",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced London Fog Latte",
+        "Category": "Refreshers & Cold Drinks",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caffe Vanilla Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Vanilla Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caffe Vanilla Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Frapp",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Frapp",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Frapp",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Ribbon Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Ribbon Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Caramel Ribbon Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cina Crmbl Oat Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cina Crmbl Oat Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Cina Crmbl Oat Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Coffee Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Coffee Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Coffee Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Dbl Choc Chp Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Dbl Choc Chp Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Dbl Choc Chp Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Espresso Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Java Chip Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Java Chip Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Java Chip Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Matcha GT Cr Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Matcha GT Cr Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Matcha GT Cr Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Mocha Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Mocha Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Mocha Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Creme Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Creme Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Creme Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Frapp",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Frapp",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pistachio Frapp",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Strawberry Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Strawberry Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Strawberry Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Bean Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Bean Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Vanilla Bean Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "WC Creme Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "WC Creme Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "WC Creme Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "WC Mocha Frap",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "WC Mocha Frap",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "WC Mocha Frap",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Covered Strawberry Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Covered Strawberry Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Chocolate Covered Strawberry Frappuccino",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Cream Frapp",
+        "Category": "Frappuccino",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Cream Frapp",
+        "Category": "Frappuccino",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Cream Frapp",
+        "Category": "Frappuccino",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": [
+            "Whipped Cream"
+        ]
+    },
+    {
+        "Base_Drink": "Carm Brulee Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Carm Brulee Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Carm Brulee Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Brulee Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Brulee Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Brulee Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Carm Brulee Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Carm Brulee Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Carm Brulee Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Carm Brulee Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Choc Java Mint Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Choc Java Mint Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Choc Java Mint Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cinn Dolce Crm Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cinn Dolce Crm Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cinn Dolce Crm Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice AplCrsp Shkn Esp",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice AplCrsp Shkn Esp",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice AplCrsp Shkn Esp",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Carm Brulee Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Carm Brulee Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Carm Brulee Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice Gngrbrd Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Lavndr Oat Latt",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Lavndr Oat Latt",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Lavndr Oat Latt",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Lvndr Oat Match",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Lvndr Oat Match",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Lvndr Oat Match",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pprmnt Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pprmnt Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pprmnt Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pumpkin Spice",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pumpkin Spice",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pumpkin Spice",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice Sgr Cookie",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice Sgr Cookie",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Ice Sgr Cookie",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Tst WC Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Tst WC Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Tst WC Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Creme Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Creme Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Creme Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Oatmilk Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Oatmilk Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Oatmilk Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Lavender Oatmilk Lat",
+        "Category": "Featured / Seasonal",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Peppermint Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Peppermint Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Peppermint Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pprmnt Mocha Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pprmnt Mocha Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pprmnt Mocha Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Peppermnt Mocha Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Peppermnt Mocha Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Peppermnt Mocha Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Crm Cold Brw",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Crm Cold Brw",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Crm Cold Brw",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Spice Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Sgr Cookie Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Sgr Cookie Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Sgr Cookie Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Sgr Cookie Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Sgr Cookie Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Sgr Cookie Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Chai Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Chai Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Chai Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pumpkin Chai Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha Cr Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tst WC Mocha Frap",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "IceAplCrsp Non Dairy Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "IceAplCrsp Non Dairy Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "IceAplCrsp Non Dairy Chai",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Trenta",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Trenta",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Lemonade Re",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Lemonade Re",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Lemonade Re",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Cran-Merry Orange Lemonade Re",
+        "Category": "Featured / Seasonal",
+        "Size": "Trenta",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer Skies Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer Skies Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer Skies Drink",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer Berry Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer Berry Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer Berry Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer-Berry Lemonade Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer-Berry Lemonade Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Summer-Berry Lemonade Refresher",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 4.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Tropical Citrus Iced Energy",
+        "Category": "Featured / Seasonal",
+        "Size": "One Size",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "VT Frozen Tropical Citrus Ice Energy",
+        "Category": "Featured / Seasonal",
+        "Size": "One Size",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Melon Burst Iced Energy",
+        "Category": "Featured / Seasonal",
+        "Size": "One Size",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Horchata Oatmilk Shaken Espresso",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Horchata Oatmilk Shaken Espresso",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Horchata Oatmilk Shaken Espresso",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brown Sugar Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brown Sugar Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brown Sugar Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Matcha Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Matcha Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Matcha Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Salted Caramel Mocha Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Salted Caramel Mocha Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Salted Caramel Mocha Strato Frappuccino",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Short",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pecan Crunch Oatmilk Latte",
+        "Category": "Featured / Seasonal",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brewed Tea FltrBag",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brewed Tea FltrBag",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brewed Tea FltrBag",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brewed Tea Sachet",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brewed Tea Sachet",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Brewed Tea Sachet",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chai Latte",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 5.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chai Latte",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 5.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chai Latte",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal Eng Brkfst Lat",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal Eng Brkfst Lat",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal Eng Brkfst Lat",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Matcha GT Latte",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 5.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Matcha GT Latte",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 5.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Matcha GT Latte",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Matcha GT Latte",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Honey Citrus Mint Tea",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 5.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Honey Citrus Mint Tea",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Honey Citrus Mint Tea",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chamomile Mint Blossom Tea",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chamomile Mint Blossom Tea",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chamomile Mint Blossom Tea",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Chamomile Mint Blossom Tea",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Earl Grey Tea",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Earl Grey Tea",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Earl Grey Tea",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Earl Grey Tea",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Emperor's Clouds and Mist Tea",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Emperor's Clouds and Mist Tea",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Emperor's Clouds and Mist Tea",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Emperor's Clouds and Mist Tea",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mint Majesty Tea",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mint Majesty Tea",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mint Majesty Tea",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mint Majesty Tea",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal English Breakfast tea",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 2.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal English Breakfast tea",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 2.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal English Breakfast tea",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 3.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Royal English Breakfast tea",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 3.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "SF Vanilla Protein Matcha",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Protein Matcha Latte",
+        "Category": "Hot Tea",
+        "Size": "Short",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Protein Matcha Latte",
+        "Category": "Hot Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Protein Matcha Latte",
+        "Category": "Hot Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Caramel Protein Matcha Latte",
+        "Category": "Hot Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Matcha Lemonade",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Matcha Lemonade",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Matcha Lemonade",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Matcha Tea Latt",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Matcha Tea Latt",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Matcha Tea Latt",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pmkn Cr Chai La",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pmkn Cr Chai La",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pmkn Cr Chai La",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Blk Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Blk Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Blk Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Chai Latte",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Chai Latte",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Chai Latte",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Gr Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Gr Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Gr Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Passion Tea",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Passion Tea",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Passion Tea",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 3.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Black Tea",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Black Tea",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Black Tea",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 3.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Green Tea",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Green Tea",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Green Tea",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 3.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pasn Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 4.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pasn Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 4.25,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Pasn Tea Lmnade",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 3.75,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Cherry Chai Latte",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Cherry Chai Latte",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Cherry Chai Latte",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Banana Cream Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Banana Cream Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Banana Cream Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced SF Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced SF Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced SF Protein Matcha",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Caramel Protein Latte",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Caramel Protein Latte",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Caramel Protein Latte",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Caramel Protein Matcha Latte",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Caramel Protein Matcha Latte",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Caramel Protein Matcha Latte",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Dubai Chocolate Matcha",
+        "Category": "Iced Tea",
+        "Size": "Tall",
+        "Base_Price": 4.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Dubai Chocolate Matcha",
+        "Category": "Iced Tea",
+        "Size": "Grande",
+        "Base_Price": 5.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Iced Dubai Chocolate Matcha",
+        "Category": "Iced Tea",
+        "Size": "Venti",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Smoothie",
+        "Category": "Smoothie",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Smoothie",
+        "Category": "Smoothie",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Mango Smoothie",
+        "Category": "Smoothie",
+        "Size": "Venti",
+        "Base_Price": 6.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Smoothie",
+        "Category": "Smoothie",
+        "Size": "Tall",
+        "Base_Price": 5.95,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Smoothie",
+        "Category": "Smoothie",
+        "Size": "Grande",
+        "Base_Price": 6.45,
+        "Allowed_Modifiers": []
+    },
+    {
+        "Base_Drink": "Strawberry Smoothie",
+        "Category": "Smoothie",
+        "Size": "Venti",
+        "Base_Price": 6.95,
         "Allowed_Modifiers": []
     }
 ]

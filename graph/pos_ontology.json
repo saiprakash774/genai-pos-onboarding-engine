@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {"id": "Category:Cold Coffee", "type": "Category"},
+    {"id": "Category:Hot Coffee", "type": "Category"},
+    {"id": "Category:Frappuccino", "type": "Category"},
+    {"id": "Modifier:Cold Foam", "type": "Modifier"},
+    {"id": "Modifier:Whipped Cream", "type": "Modifier"},
+    {"id": "Pricing:Campus Premium", "type": "Pricing_Rule"}
+  ],
+  "edges": [
+    {"source": "Modifier:Cold Foam", "target": "Category:Cold Coffee", "relation": "Applies_To"},
+    {"source": "Modifier:Whipped Cream", "target": "Category:Hot Coffee", "relation": "Applies_To"},
+    {"source": "Modifier:Whipped Cream", "target": "Category:Frappuccino", "relation": "Applies_To"},
+    {"source": "Pricing:Campus Premium", "target": "Category:Cold Coffee", "relation": "Increases_Price_By", "value": 0.50}
+  ]
+}
