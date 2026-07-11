@@ -19,7 +19,10 @@ const statusMap = {
     "validation_failed": "node-validation",
     "self_heal": "node-heal",
     "healed": "node-heal",
-    "failed_max_retries": "node-heal"
+    "failed_max_retries": "node-heal",
+    "sync_to_ion": "node-sync",
+    "synced": "node-sync",
+    "sync_failed": "node-sync"
 };
 
 // Polling state
@@ -55,7 +58,7 @@ function updateUI(pipeline, parsedItems, preview) {
             node.classList.add('error');
             node.classList.remove('active');
         }
-        if (status === 'validated' || status === 'healed') {
+        if (status === 'validated' || status === 'healed' || status === 'synced') {
             node.classList.add('success');
             node.classList.remove('active');
         }

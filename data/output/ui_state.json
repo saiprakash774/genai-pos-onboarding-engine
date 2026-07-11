@@ -1,1 +1,1 @@
-{"status": "validated", "error_logs": ""}
+{"status": "sync_failed", "error_logs": "422 Client Error: Unprocessable Content for url: http://localhost:8085/api/ion_sync"}

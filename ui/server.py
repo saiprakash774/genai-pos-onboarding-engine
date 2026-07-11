@@ -60,6 +60,12 @@ def trigger_attack():
     result = subprocess.run(["python", script_path], capture_output=True, text=True)
     return {"message": "Attack injected! Orchestrator should pick it up automatically.", "logs": result.stdout}
 
+@app.post("/api/ion_sync")
+async def ion_sync(payload: list):
+    # Mock Infor ION endpoint
+    print(f"Received sync payload for {len(payload)} items.")
+    return {"status": "success", "message": f"Successfully ingested {len(payload)} items into Infor ION."}
+
 if __name__ == "__main__":
     print("Starting Dashboard Server on http://localhost:8085")
     uvicorn.run(app, host="0.0.0.0", port=8085)

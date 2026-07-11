@@ -106,112 +106,61 @@ def self_heal(state: PipelineState) -> PipelineState:
         logging.error("Max retries reached. Halting pipeline.")
         return {"status": "failed_max_retries", "error_logs": state["error_logs"], "retry_count": retry_count}
         
-    logging.info("Green Team Agent analyzing trace logs (MOCKED DUE TO API BILLING)...")
-    import time
-    time.sleep(2) # Simulate thinking
-    
+    logging.info("Green Team Agent analyzing trace logs via Gemini...")
     extract_script_path = os.path.join(SCRIPTS_DIR, 'extract_menu.py')
     
-    new_code = """
-import pandas as pd
-import json
-import os
-import sys
-from langsmith.run_helpers import traceable
-
-@traceable(name="map_modifiers")
-def map_modifiers(category):
-    allowed_modifiers = []
-    if category == "Cold Coffee":
-        allowed_modifiers.append("Cold Foam")
-    if category in ["Hot Coffee", "Frappuccino"]:
-        allowed_modifiers.append("Whipped Cream")
-    return allowed_modifiers
-
-@traceable(name="extract_menu_execution")
-def main():
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    # Always try to read from the attacked file if it exists (for the Red Team scenario)
-    input_file = os.path.join(base_dir, 'data', 'raw', 'Starbucks_Infor_POS_Foundation_Attacked.xlsx')
-    if not os.path.exists(input_file):
-        input_file = os.path.join(base_dir, 'data', 'raw', 'Starbucks_Infor_POS_Foundation.xlsx')
-        
-    output_file = os.path.join(base_dir, 'data', 'output', 'menu_parsed.json')
-
-    if not os.path.exists(input_file):
-        print(f"Error: {input_file} not found.")
-        sys.exit(1)
-
     try:
-        df = pd.read_excel(input_file, sheet_name="Menu_Products")
+        from langchain_google_genai import ChatGoogleGenerativeAI
+        from langchain_core.messages import HumanMessage, SystemMessage
+        
+        llm = ChatGoogleGenerativeAI(model="gemini-2.5-pro", temperature=0)
+        
+        with open(extract_script_path, 'r') as f:
+            current_code = f.read()
+            
+        system_msg = SystemMessage(content="You are an expert Python data engineer fixing a menu extraction script.")
+        human_msg = HumanMessage(content=f"The following python script is extracting data from an Excel file but failing BDD or schema validation tests:\n\n```python\n{current_code}\n```\n\nThe pipeline error logs are:\n{state['error_logs']}\n\nPlease rewrite the entire Python script to fix this bug. You must output ONLY valid Python code inside a ```python block. Do not include any explanations.")
+        
+        response = llm.invoke([system_msg, human_msg])
+        content = response.content
+        
+        if "```python" in content:
+            new_code = content.split("```python")[1].split("```")[0].strip()
+        elif "```" in content:
+            new_code = content.split("```")[1].split("```")[0].strip()
+        else:
+            new_code = content.strip()
+            
+        with open(extract_script_path, 'w') as f:
+            f.write(new_code)
+            
+        logging.info("Live AI Patch applied to extract_menu.py. Routing back to parsing.")
+        return {"status": "healed", "error_logs": "", "retry_count": retry_count + 1}
+        
     except Exception as e:
-        print(f"Error reading excel: {e}")
-        sys.exit(1)
+        logging.error(f"Failed to use Live LLM for self-healing: {e}")
+        # Force a failure state to avoid infinite loops if the LLM crashes repeatedly
+        return {"status": "failed_max_retries", "error_logs": f"LLM Connection Error: {str(e)}", "retry_count": 3}
 
-    df.dropna(how='all', inplace=True)
-    
-    expected_cols = ["Base_Drink", "Size", "Category"]
-    for col in expected_cols:
-        if col not in df.columns:
-            df[col] = None
-            
-    price_col = "Base_Price ($)" if "Base_Price ($)" in df.columns else "Base_Price"
-    if price_col not in df.columns:
-        df[price_col] = 0.0
-
-    df['Base_Drink'] = df['Base_Drink'].ffill()
-    df['Category'] = df['Category'].ffill()
-
-    parsed_menu = []
-    
-    for index, row in df.iterrows():
-        base_drink = str(row['Base_Drink']) if pd.notnull(row['Base_Drink']) and str(row['Base_Drink']).strip() not in ['nan', 'None', ''] else ""
-        category = str(row['Category']) if pd.notnull(row['Category']) and str(row['Category']).strip() not in ['nan', 'None', ''] else ""
-        size = str(row['Size']) if pd.notnull(row['Size']) and str(row['Size']).strip() not in ['nan', 'None', ''] else ""
+def sync_to_ion(state: PipelineState) -> PipelineState:
+    logging.info("Node: sync_to_ion - Deploying payload to mock Infor ION endpoint...")
+    output_file = os.path.join(DATA_OUT_DIR, 'menu_parsed.json')
+    if not os.path.exists(output_file):
+         return {"status": "sync_failed", "error_logs": "menu_parsed.json not found.", "retry_count": state.get("retry_count", 0)}
+         
+    with open(output_file, 'r') as f:
+        payload = json.load(f)
         
-        raw_price = row[price_col]
-        try:
-            base_price = float(raw_price) if pd.notnull(raw_price) else 0.0
-        except ValueError:
-            base_price = 0.0
+    import requests
+    try:
+        response = requests.post("http://localhost:8085/api/ion_sync", json=payload)
+        response.raise_for_status()
+    except Exception as e:
+        logging.error(f"Sync to ION failed:\n{e}")
+        return {"status": "sync_failed", "error_logs": str(e), "retry_count": state.get("retry_count", 0)}
         
-        # GREEN TEAM PATCH: Sanitize Slop Squatting Attack!
-        if base_price < 0 or category == "__proto__":
-            print(f"Green Team: Quarantined malicious row {base_drink}")
-            continue
-            
-        # Ignore completely empty structural rows
-        if base_drink == "" and category == "" and size == "":
-            continue
-            
-        allowed_modifiers = map_modifiers(category)
-            
-        menu_item = {
-            "Base_Drink": base_drink,
-            "Category": category,
-            "Size": size,
-            "Base_Price": base_price,
-            "Allowed_Modifiers": allowed_modifiers
-        }
-        parsed_menu.append(menu_item)
-
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
-
-    with open(output_file, 'w') as f:
-        json.dump(parsed_menu, f, indent=4)
-        
-    print("Parsing Agent execution completed successfully.")
-
-if __name__ == "__main__":
-    main()
-"""
-        
-    # Write the healed code
-    with open(extract_script_path, 'w') as f:
-        f.write(new_code.strip())
-        
-    logging.info("Patch applied to extract_menu.py. Routing back to parsing.")
-    return {"status": "healed", "error_logs": "", "retry_count": retry_count + 1}
+    logging.info("Successfully synced to Infor ION. Pipeline Complete.")
+    return {"status": "synced", "error_logs": "", "retry_count": state.get("retry_count", 0)}
 
 # 3. Build Graph
 workflow = StateGraph(PipelineState)
@@ -220,6 +169,7 @@ workflow.add_node("run_parsing", build_and_run_parsing)
 workflow.add_node("run_bdd_tests", run_bdd_tests)
 workflow.add_node("run_mcp_validation", run_mcp_validation)
 workflow.add_node("self_heal", self_heal)
+workflow.add_node("sync_to_ion", sync_to_ion)
 
 workflow.set_entry_point("run_parsing")
 
@@ -235,7 +185,7 @@ def route_bdd(state: PipelineState):
 
 def route_validation(state: PipelineState):
     if state["status"] == "validated":
-        return END
+        return "sync_to_ion"
     return "self_heal"
 
 def route_heal(state: PipelineState):
@@ -247,6 +197,7 @@ workflow.add_conditional_edges("run_parsing", route_parsing)
 workflow.add_conditional_edges("run_bdd_tests", route_bdd)
 workflow.add_conditional_edges("run_mcp_validation", route_validation)
 workflow.add_conditional_edges("self_heal", route_heal)
+workflow.add_edge("sync_to_ion", END)
 
 app = workflow.compile()
 

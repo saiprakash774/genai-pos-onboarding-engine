@@ -7,10 +7,19 @@ from langsmith.run_helpers import traceable
 @traceable(name="map_modifiers")
 def map_modifiers(category):
     allowed_modifiers = []
-    if category == "Cold Coffee":
-        allowed_modifiers.append("Cold Foam")
-    if category in ["Hot Coffee", "Frappuccino"]:
-        allowed_modifiers.append("Whipped Cream")
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    ontology_path = os.path.join(base_dir, 'graph', 'pos_ontology.json')
+    
+    if os.path.exists(ontology_path):
+        with open(ontology_path, 'r') as f:
+            try:
+                ontology = json.load(f)
+                for edge in ontology.get('edges', []):
+                    if edge.get('relation') == 'Applies_To' and edge.get('target') == f"Category:{category}":
+                        modifier_name = edge.get('source').replace('Modifier:', '')
+                        allowed_modifiers.append(modifier_name)
+            except json.JSONDecodeError:
+                pass
     return allowed_modifiers
 
 @traceable(name="extract_menu_execution")
