@@ -1,0 +1,17 @@
+langgraph
+langchain-google-genai
+langgraph-checkpoint-sqlite
+langsmith
+python-dotenv
+watchdog
+pytest
+pytest-bdd
+requests
+neo4j
+fastapi
+uvicorn
+pandas
+openpyxl
+mcp
+opentelemetry-api
+opentelemetry-sdk

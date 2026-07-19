@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infor POS Pipeline Orchestrator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Agentic Pipeline <span>Dashboard</span></h1>
+            <p>Real-time orchestrator visualization</p>
+        </header>
+
+        <div class="main-content">
+            <div class="controls">
+                <button id="triggerBtn" class="btn primary-btn">Inject Slop Squatting Attack (Red Team)</button>
+                <div id="triggerStatus" class="status-msg"></div>
+            </div>
+
+            <div class="pipeline-graph">
+                <div class="node" id="node-init">
+                    <div class="node-icon">⏱️</div>
+                    <div class="node-label">Idle / Init</div>
+                </div>
+                <div class="connector"></div>
+                
+                <div class="node" id="node-parsing">
+                    <div class="node-icon">🐳</div>
+                    <div class="node-label">Parsing Agent</div>
+                    <div class="node-sub">Docker Extraction</div>
+                </div>
+                <div class="connector"></div>
+                
+                <div class="node" id="node-bdd">
+                    <div class="node-icon">✅</div>
+                    <div class="node-label">Quality Gates</div>
+                    <div class="node-sub">BDD Tests</div>
+                </div>
+                <div class="connector"></div>
+                
+                <div class="node" id="node-validation">
+                    <div class="node-icon">🛡️</div>
+                    <div class="node-label">Blue Team</div>
+                    <div class="node-sub">MCP Schema Check</div>
+                </div>
+                <div class="connector connector-reverse"></div>
+                
+                <div class="node" id="node-heal">
+                    <div class="node-icon">⚕️</div>
+                    <div class="node-label">Green Team</div>
+                    <div class="node-sub">Self-Healing Loop</div>
+                </div>
+                <div class="connector"></div>
+                <div class="node" id="node-sync">
+                    <div class="node-icon">🚀</div>
+                    <div class="node-label">Deployment</div>
+                    <div class="node-sub">Infor ION Sync</div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="glass-panel chat-container">
+                    <h3>Orchestrator Chat <span class="badge">Online</span></h3>
+                    <div id="chatHistory" class="chat-history log-box">
+                        <div class="chat-msg system"><strong>System:</strong> Orchestrator Agent initialized. Awaiting commands.</div>
+                    </div>
+                    <div class="chat-input-wrapper">
+                        <input type="text" id="chatInput" placeholder="Ask the Orchestrator about anomalies..." />
+                        <button id="sendChatBtn" class="btn primary-btn small-btn">Send</button>
+                    </div>
+                </div>
+
+                <div class="glass-panel">
+                <h3>Pipeline Status & Logs</h3>
+                <div class="status-indicator">
+                    <span class="pulse"></span> Current State: <strong id="currentStateLabel">Idle</strong>
+                </div>
+                <pre id="errorLogs" class="log-box">Waiting for orchestrator logs...</pre>
+            </div>
+            </div> <!-- Close dashboard-grid -->
+
+            <div class="glass-panel">
+                <h3>Extracted Data Preview <span id="itemCount" class="badge">0 items</span></h3>
+                <pre id="dataPreview" class="log-box json-box">No data available.</pre>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

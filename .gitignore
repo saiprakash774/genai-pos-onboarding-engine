@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv_sandbox/
+.env
+*.db
+data/raw/*.xlsx
+data/output/*.json

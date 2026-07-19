@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infor POS - Interactive Simulator</title>
+    <link rel="stylesheet" href="/static/pos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- UPLOAD STATE -->
+        <div id="upload-view" class="view active">
+            <div class="glass-container">
+                <h1>Ingestion <span>Portal</span></h1>
+                <p>Upload a raw Excel menu to trigger the Agentic Pipeline.</p>
+                
+                <div id="drop-zone" class="drop-zone">
+                    <span class="icon">📁</span>
+                    <p>Drag & Drop your .xlsx file here<br>or click to browse</p>
+                    <input type="file" id="file-input" accept=".xlsx" hidden>
+                </div>
+                <div style="margin-top: 1.5rem; text-align: center;">
+                    <button id="launch-sample-btn" class="btn secondary">Launch Current Active Menu</button>
+                </div>
+
+                <div id="pipeline-status" class="hidden">
+                    <div class="status-indicator">
+                        <span class="pulse"></span> Current State: <strong id="currentStateLabel">Processing...</strong>
+                    </div>
+                    <div class="progress-bar"><div id="progress" class="progress"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POS STATE -->
+        <div id="pos-view" class="view">
+            <header class="pos-header">
+                <div class="pos-title-group">
+                    <h2>Infor POS <span>Terminal</span></h2>
+                    <div class="clock" id="clock">12:00 PM</div>
+                </div>
+                <div class="admin-toolbar">
+                    <button class="btn admin-btn" id="admin-upload-btn">Upload New Menu</button>
+                    <button class="btn admin-btn warning" id="admin-simulate-btn">Simulate Update (+ $1)</button>
+                    <button class="btn admin-btn danger" id="admin-delete-btn">Delete Menu</button>
+                    <input type="file" id="admin-file-input" accept=".xlsx" hidden>
+                </div>
+            </header>
+
+            <div class="pos-layout">
+                <!-- Main Categories & Items -->
+                <div class="menu-section">
+                    <div class="categories" id="category-tabs">
+                        <!-- Dynamic Categories -->
+                    </div>
+                    
+                    <div class="menu-grid" id="menu-grid">
+                        <!-- Dynamic Buttons -->
+                    </div>
+                </div>
+
+                <!-- Order Panel (Cart) -->
+                <div class="order-section">
+                    <div class="order-header">Current Order</div>
+                    <div class="order-list" id="order-list">
+                        <!-- Items in cart -->
+                        <div class="empty-cart">Order is empty</div>
+                    </div>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax (8%)</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button class="pay-btn" id="pay-btn">Send to Kitchen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modifier Modal -->
+        <div id="modifier-modal" class="modal">
+            <div class="modal-content glass-container">
+                <h3 id="modal-title">Customize Item</h3>
+                
+                <div class="modifier-group">
+                    <h4>Select Size</h4>
+                    <div class="options-grid" id="size-options">
+                        <!-- Dynamic Sizes -->
+                    </div>
+                </div>
+
+                <div class="modifier-group" id="modifiers-container">
+                    <h4>Add Modifiers</h4>
+                    <div class="options-grid" id="modifier-options">
+                        <!-- Dynamic Modifiers -->
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn secondary" id="cancel-item">Cancel</button>
+                    <button class="btn primary" id="add-to-order">Add to Order (<span id="modal-price">$0.00</span>)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/pos.js"></script>
+</body>
+</html>
