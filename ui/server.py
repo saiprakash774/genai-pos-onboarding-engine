@@ -102,6 +102,31 @@ def load_template(request_body: dict):
 
 @app.get("/api/menu")
 def get_full_menu():
+    neo4j_uri = "bolt://neo4j:7687" if os.path.exists("/.dockerenv") else "bolt://localhost:7687"
+    neo4j_auth = ("neo4j", "password")
+    
+    try:
+        from neo4j import GraphDatabase
+        with GraphDatabase.driver(neo4j_uri, auth=neo4j_auth) as driver:
+            with driver.session() as session:
+                result = session.run(
+                    "MATCH (p:Product)-[:BELONGS_TO]->(c:Category) "
+                    "RETURN p.name AS Base_Drink, c.name AS Category, p.size AS Size, p.price AS Base_Price, p.allowed_modifiers AS Allowed_Modifiers"
+                )
+                menu_items = []
+                for record in result:
+                    menu_items.append({
+                        "Base_Drink": record["Base_Drink"],
+                        "Category": record["Category"],
+                        "Size": record["Size"],
+                        "Base_Price": record["Base_Price"],
+                        "Allowed_Modifiers": record["Allowed_Modifiers"] or []
+                    })
+                if menu_items:
+                    return menu_items
+    except Exception as e:
+        print(f"Failed to query menu from Neo4j: {e}. Falling back to flat file.")
+
     parsed_path = os.path.join(DATA_OUT_DIR, "menu_parsed.json")
     if os.path.exists(parsed_path):
         try:

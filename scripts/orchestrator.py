@@ -11,6 +11,7 @@ from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from dotenv import load_dotenv
+from neo4j import GraphDatabase
 
 load_dotenv()
 
@@ -209,6 +210,35 @@ def sync_to_ion(state: PipelineState) -> PipelineState:
     except Exception as e:
         logging.error(f"Sync to ION failed:\n{e}")
         return {"status": "sync_failed", "error_logs": str(e), "retry_count": state.get("retry_count", 0)}
+        
+    # Write validated products directly to Neo4j graph database
+    neo4j_uri = "bolt://neo4j:7687" if os.path.exists("/.dockerenv") else "bolt://localhost:7687"
+    neo4j_auth = ("neo4j", "password")
+    try:
+        with GraphDatabase.driver(neo4j_uri, auth=neo4j_auth) as driver:
+            with driver.session() as session:
+                # Clear existing product nodes
+                session.run("MATCH (p:Product) DETACH DELETE p")
+                
+                # Write new products
+                for item in payload:
+                    name = item.get("Base_Drink")
+                    category = item.get("Category")
+                    size = item.get("Size")
+                    price = float(item.get("Base_Price", 0.0))
+                    modifiers = item.get("Allowed_Modifiers", [])
+                    
+                    if name and category:
+                        session.run(
+                            "MERGE (p:Product {name: $name, size: $size, price: $price, allowed_modifiers: $modifiers}) "
+                            "MERGE (c:Category {name: $category}) "
+                            "MERGE (p)-[:BELONGS_TO]->(c)",
+                            name=name, size=size, price=price, modifiers=modifiers, category=category
+                        )
+        logging.info("Successfully synced validated products to Neo4j database.")
+    except Exception as ne:
+        logging.error(f"Neo4j Database Sync failed: {ne}")
+        # Note: We log the error but don't fail the pipeline, allowing local mock fallback to work
         
     logging.info("Successfully synced to Infor ION. Pipeline Complete.")
     return {"status": "synced", "error_logs": "", "retry_count": state.get("retry_count", 0)}
