@@ -73,7 +73,7 @@ def trigger_attack():
 async def upload_file(file: UploadFile = File(...)):
     raw_dir = os.path.join(BASE_DIR, "data", "raw")
     os.makedirs(raw_dir, exist_ok=True)
-    file_path = os.path.join(raw_dir, "uploaded_menu.xlsx")
+    file_path = os.path.join(raw_dir, "Starbucks_Infor_POS_Foundation.xlsx")
     with open(file_path, "wb") as f:
         f.write(await file.read())
     return {"status": "success", "message": "File uploaded successfully. Orchestrator will pick it up."}

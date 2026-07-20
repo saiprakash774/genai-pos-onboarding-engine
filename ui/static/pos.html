@@ -86,28 +86,30 @@
             </div>
         </div>
 
-        <!-- Modifier Modal -->
+        <!-- Modifier Modal (Wizard) -->
         <div id="modifier-modal" class="modal">
-            <div class="modal-content glass-container">
-                <h3 id="modal-title">Customize Item</h3>
+            <div class="modal-content glass-container wizard">
+                <div class="wizard-header">
+                    <h3 id="modal-title">Customize Item</h3>
+                    <div class="wizard-progress">
+                        <div class="progress-track">
+                            <div id="wizard-progress-bar" class="progress-fill"></div>
+                        </div>
+                        <span id="wizard-step-label">Step 1 of 4</span>
+                    </div>
+                </div>
                 
-                <div class="modifier-group">
-                    <h4>Select Size</h4>
-                    <div class="options-grid" id="size-options">
-                        <!-- Dynamic Sizes -->
-                    </div>
+                <div id="wizard-container" class="wizard-body">
+                    <!-- Dynamic Step Containers Injected Here via JS -->
                 </div>
 
-                <div class="modifier-group" id="modifiers-container">
-                    <h4>Add Modifiers</h4>
-                    <div class="options-grid" id="modifier-options">
-                        <!-- Dynamic Modifiers -->
+                <div class="modal-actions wizard-actions">
+                    <button class="btn secondary" id="wizard-back-btn" style="visibility: hidden;">Back</button>
+                    <div class="wizard-right-actions">
+                        <button class="btn secondary" id="cancel-item">Cancel</button>
+                        <button class="btn primary" id="wizard-next-btn">Next</button>
+                        <button class="btn primary" id="add-to-order" style="display: none;">Add to Order (<span id="modal-price">$0.00</span>)</button>
                     </div>
-                </div>
-
-                <div class="modal-actions">
-                    <button class="btn secondary" id="cancel-item">Cancel</button>
-                    <button class="btn primary" id="add-to-order">Add to Order (<span id="modal-price">$0.00</span>)</button>
                 </div>
             </div>
         </div>

@@ -353,3 +353,26 @@ body {
 .admin-btn.warning { border-color: #d29922; color: #d29922; }
 .admin-btn.danger { border-color: var(--danger); color: var(--danger); }
 .admin-btn:hover { background: rgba(255, 255, 255, 0.2); }
+
+/* Wizard Styles */
+.wizard { width: 600px; }
+.wizard-header { margin-bottom: 1.5rem; }
+.wizard-header h3 { margin-bottom: 0.5rem; border: none; padding: 0; }
+.wizard-progress { display: flex; align-items: center; gap: 1rem; }
+.progress-track { flex: 1; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--primary); width: 0%; transition: width 0.3s ease; }
+#wizard-step-label { font-size: 0.85rem; color: var(--text-muted); }
+
+.wizard-body { min-height: 250px; position: relative; overflow: hidden; }
+.wizard-step { display: none; animation: slideInRight 0.3s ease-out forwards; }
+.wizard-step.active { display: block; }
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.wizard-actions { justify-content: space-between; border-top: 1px solid var(--border); padding-top: 1.5rem; }
+.wizard-right-actions { display: flex; gap: 1rem; }
+
+.mod-price-label { display: block; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
+.opt-btn.selected .mod-price-label { color: rgba(255,255,255,0.8); }

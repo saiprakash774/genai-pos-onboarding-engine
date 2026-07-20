@@ -33,8 +33,8 @@ def validate_menu_payload(payload_json_str: str) -> Dict[str, Any]:
     validated_items = []
     
     for idx, item in enumerate(payload):
-        # Rule: check for $0.00 base prices
-        base_price = item.get("Base_Price ($)")
+        # Rule: check for $0.00 base prices (support both field name formats)
+        base_price = item.get("Base_Price ($)") or item.get("Base_Price")
         if base_price is None or float(base_price) <= 0.0:
             errors.append({
                 "index": idx,

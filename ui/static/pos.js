@@ -118,38 +118,76 @@ function renderItems(category) {
             <div class="menu-item-name">${drinkName}</div>
             <div class="menu-item-price">From $${basePrice.toFixed(2)}</div>
         `;
-        btn.onclick = () => openModifierModal(drinkName, drinkVariations);
+        btn.onclick = () => openModifierModal(drinkName, drinkVariations, category);
         grid.appendChild(btn);
     });
 }
 
+// Configuration
+const MODIFIER_PRICING = {
+    "Espresso Shots": { 
+        keywords: ["shot", "espresso", "roast"], 
+        items: ["Extra Shot", "Blonde Espresso", "Decaf Espresso"],
+        price: 1.00, freeItems: [] 
+    },
+    "Flavors": { 
+        keywords: ["syrup", "sauce", "drizzle", "vanilla", "caramel", "mocha", "dolce"], 
+        items: ["Vanilla Syrup", "Caramel Syrup", "Mocha Sauce", "Classic Syrup", "Cinnamon Dolce Syrup"],
+        price: 0.80, freeItems: ["classic syrup"] 
+    },
+    "Milk": { 
+        keywords: ["milk", "cream", "soy", "oat", "almond", "coconut", "half"], 
+        items: ["2% Milk", "Whole Milk", "Nonfat Milk", "Oatmilk", "Almondmilk", "Soymilk"],
+        price: 0.70, freeItems: ["2% milk", "whole milk", "nonfat milk"] 
+    },
+    "Toppings": { 
+        keywords: ["foam", "whip", "topping", "powder", "cookie", "crunch"], 
+        items: ["Cold Foam", "Whipped Cream", "Caramel Drizzle", "Cinnamon Powder"],
+        price: 1.25, freeItems: [] 
+    }
+};
+
+const CATEGORY_ROUTING = {
+    "Cold Coffee": ["Size", "Espresso Shots", "Flavors", "Milk", "Toppings"],
+    "Hot Coffee": ["Size", "Espresso Shots", "Flavors", "Milk", "Toppings"],
+    "Frappuccino": ["Size", "Flavors", "Milk", "Toppings"],
+    "Refreshers & Cold Drinks": ["Size", "Flavors", "Toppings"],
+    "Smoothie": ["Size", "Flavors", "Toppings"],
+    "Iced Tea": ["Size", "Flavors", "Toppings"],
+    "Hot Tea": ["Size", "Flavors", "Toppings"],
+    "Hot Drinks": ["Size", "Flavors", "Milk", "Toppings"],
+    "DEFAULT": ["Size", "Flavors", "Milk", "Toppings"]
+};
+
+let wizardSteps = [];
+let currentWizardStep = 0;
+let parsedModifiers = {};
+
+function categorizeModifier(modStr) {
+    const lower = modStr.toLowerCase();
+    for (const [cat, data] of Object.entries(MODIFIER_PRICING)) {
+        if (data.keywords.some(k => lower.includes(k))) return cat;
+    }
+    return "Other";
+}
+
+function getModifierPrice(modStr) {
+    const lower = modStr.toLowerCase();
+    const cat = categorizeModifier(modStr);
+    if(cat === "Other") return 0;
+    const data = MODIFIER_PRICING[cat];
+    if(data.freeItems.some(f => lower.includes(f))) return 0;
+    return data.price;
+}
+
 // Modal Logic
-function openModifierModal(drinkName, variations) {
-    selectedItem = { name: drinkName, variations: variations };
+function openModifierModal(drinkName, variations, category) {
+    selectedItem = { name: drinkName, variations: variations, category: category };
     selectedSize = variations[0].Size;
     selectedMods.clear();
+    currentWizardStep = 0;
     
     document.getElementById('modal-title').innerText = drinkName;
-    
-    // Render Sizes
-    const sizeContainer = document.getElementById('size-options');
-    sizeContainer.innerHTML = '';
-    variations.forEach(v => {
-        const btn = document.createElement('button');
-        btn.className = `opt-btn ${v.Size === selectedSize ? 'selected' : ''}`;
-        btn.innerText = `${v.Size || 'Regular'} ($${v.Base_Price.toFixed(2)})`;
-        btn.onclick = () => {
-            selectedSize = v.Size;
-            Array.from(sizeContainer.children).forEach(c => c.classList.remove('selected'));
-            btn.classList.add('selected');
-            updateModalPrice();
-        };
-        sizeContainer.appendChild(btn);
-    });
-    
-    // Render Modifiers (from Gherkin mapping)
-    const modContainer = document.getElementById('modifier-options');
-    modContainer.innerHTML = '';
     
     let allMods = [];
     variations.forEach(v => {
@@ -157,14 +195,76 @@ function openModifierModal(drinkName, variations) {
     });
     allMods = [...new Set(allMods)];
     
-    if (allMods.length === 0) {
-        document.getElementById('modifiers-container').style.display = 'none';
-    } else {
-        document.getElementById('modifiers-container').style.display = 'block';
-        allMods.forEach(mod => {
+    parsedModifiers = { "Size": variations.map(v => v.Size || 'Regular') };
+    allMods.forEach(mod => {
+        const cat = categorizeModifier(mod);
+        if(!parsedModifiers[cat]) parsedModifiers[cat] = [];
+        parsedModifiers[cat].push(mod);
+    });
+    
+    const route = CATEGORY_ROUTING[category] || CATEGORY_ROUTING["DEFAULT"];
+    wizardSteps = route.filter(step => step === "Size" || MODIFIER_PRICING[step]);
+    
+    renderWizardStep();
+    updateModalPrice();
+    document.getElementById('modifier-modal').classList.add('active');
+}
+
+function renderWizardStep() {
+    const container = document.getElementById('wizard-container');
+    container.innerHTML = '';
+    
+    if (wizardSteps.length === 0) {
+        document.getElementById('wizard-step-label').innerText = `No Customizations Available`;
+        document.getElementById('wizard-progress-bar').style.width = `100%`;
+        const addBtn = document.getElementById('add-to-order');
+        addBtn.style.display = 'block';
+        document.getElementById('wizard-next-btn').style.display = 'none';
+        return;
+    }
+
+    const stepName = wizardSteps[currentWizardStep];
+    document.getElementById('wizard-step-label').innerText = `Step ${currentWizardStep + 1} of ${wizardSteps.length}: ${stepName}`;
+    const progress = ((currentWizardStep + 1) / wizardSteps.length) * 100;
+    document.getElementById('wizard-progress-bar').style.width = `${progress}%`;
+    
+    const stepDiv = document.createElement('div');
+    stepDiv.className = 'wizard-step active';
+    
+    const h4 = document.createElement('h4');
+    h4.innerText = `Select ${stepName}`;
+    h4.style.marginBottom = '1rem';
+    stepDiv.appendChild(h4);
+    
+    const grid = document.createElement('div');
+    grid.className = 'options-grid';
+    
+    if(stepName === "Size") {
+        selectedItem.variations.forEach(v => {
             const btn = document.createElement('button');
-            btn.className = 'opt-btn';
-            btn.innerText = mod;
+            btn.className = `opt-btn ${v.Size === selectedSize ? 'selected' : ''}`;
+            btn.innerHTML = `${v.Size || 'Regular'} <span class="mod-price-label">$${v.Base_Price.toFixed(2)}</span>`;
+            btn.onclick = () => {
+                selectedSize = v.Size;
+                Array.from(grid.children).forEach(c => c.classList.remove('selected'));
+                btn.classList.add('selected');
+                updateModalPrice();
+            };
+            grid.appendChild(btn);
+        });
+    } else {
+        let mods = parsedModifiers[stepName] || [];
+        if (mods.length === 0 && MODIFIER_PRICING[stepName]) {
+            mods = MODIFIER_PRICING[stepName].items;
+        }
+        
+        mods.forEach(mod => {
+            const price = getModifierPrice(mod);
+            const priceStr = price > 0 ? `+$${price.toFixed(2)}` : 'Free';
+            
+            const btn = document.createElement('button');
+            btn.className = `opt-btn ${selectedMods.has(mod) ? 'selected' : ''}`;
+            btn.innerHTML = `${mod} <span class="mod-price-label">${priceStr}</span>`;
             btn.onclick = () => {
                 if(selectedMods.has(mod)) {
                     selectedMods.delete(mod);
@@ -173,18 +273,52 @@ function openModifierModal(drinkName, variations) {
                     selectedMods.add(mod);
                     btn.classList.add('selected');
                 }
+                updateModalPrice();
             };
-            modContainer.appendChild(btn);
+            grid.appendChild(btn);
         });
     }
     
-    updateModalPrice();
-    document.getElementById('modifier-modal').classList.add('active');
+    stepDiv.appendChild(grid);
+    container.appendChild(stepDiv);
+    
+    const backBtn = document.getElementById('wizard-back-btn');
+    const nextBtn = document.getElementById('wizard-next-btn');
+    const addBtn = document.getElementById('add-to-order');
+    
+    backBtn.style.visibility = currentWizardStep > 0 ? 'visible' : 'hidden';
+    
+    if(currentWizardStep === wizardSteps.length - 1) {
+        nextBtn.style.display = 'none';
+        addBtn.style.display = 'block';
+    } else {
+        nextBtn.style.display = 'block';
+        addBtn.style.display = 'none';
+    }
 }
+
+document.getElementById('wizard-next-btn').onclick = () => {
+    if(currentWizardStep < wizardSteps.length - 1) {
+        currentWizardStep++;
+        renderWizardStep();
+    }
+};
+
+document.getElementById('wizard-back-btn').onclick = () => {
+    if(currentWizardStep > 0) {
+        currentWizardStep--;
+        renderWizardStep();
+    }
+};
 
 function updateModalPrice() {
     const v = selectedItem.variations.find(v => v.Size === selectedSize) || selectedItem.variations[0];
-    document.getElementById('modal-price').innerText = `$${v.Base_Price.toFixed(2)}`;
+    let total = v.Base_Price;
+    selectedMods.forEach(mod => {
+        total += getModifierPrice(mod);
+    });
+    document.getElementById('modal-price').innerText = `$${total.toFixed(2)}`;
+    return total;
 }
 
 document.getElementById('cancel-item').onclick = () => {
@@ -192,11 +326,11 @@ document.getElementById('cancel-item').onclick = () => {
 };
 
 document.getElementById('add-to-order').onclick = () => {
-    const v = selectedItem.variations.find(v => v.Size === selectedSize) || selectedItem.variations[0];
+    const finalPrice = updateModalPrice();
     cart.push({
         name: selectedItem.name,
         size: selectedSize,
-        price: v.Base_Price,
+        price: finalPrice,
         mods: Array.from(selectedMods)
     });
     document.getElementById('modifier-modal').classList.remove('active');

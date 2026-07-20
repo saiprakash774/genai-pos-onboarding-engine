@@ -80,8 +80,8 @@ def build_and_run_parsing(state: PipelineState) -> PipelineState:
         "-v", f"{host_out_dir}:/app/data/output"
     ]
     
-    # Pass LangSmith tracing variables into the container if they exist
-    for env_var in ["LANGCHAIN_TRACING_V2", "LANGCHAIN_API_KEY", "LANGCHAIN_PROJECT"]:
+    # Pass LangSmith and Gemini API keys into the container if they exist
+    for env_var in ["LANGCHAIN_TRACING_V2", "LANGCHAIN_API_KEY", "LANGCHAIN_PROJECT", "GEMINI_API_KEY"]:
         if os.environ.get(env_var):
             docker_cmd.extend(["-e", f"{env_var}={os.environ[env_var]}"])
             
@@ -106,7 +106,9 @@ def run_bdd_tests(state: PipelineState) -> PipelineState:
         pytest_exe = "pytest"
 
     pytest_cmd = [pytest_exe, "tests/test_menu_mapping.py", "-v"]
-    result = subprocess.run(pytest_cmd, cwd=BASE_DIR, capture_output=True, text=True, encoding='utf-8')
+    test_env = os.environ.copy()
+    test_env["PYTHONPATH"] = BASE_DIR
+    result = subprocess.run(pytest_cmd, cwd=BASE_DIR, capture_output=True, text=True, encoding='utf-8', env=test_env)
     
     if result.returncode != 0:
         logging.error("BDD tests failed. Forwarding to self-healing.")
@@ -199,8 +201,10 @@ def sync_to_ion(state: PipelineState) -> PipelineState:
         payload = json.load(f)
         
     import requests
+    # Use Docker hostname when inside container, localhost when running natively
+    ui_host = "ui" if os.environ.get("HOST_PROJECT_DIR") and os.path.exists("/.dockerenv") else "localhost"
     try:
-        response = requests.post("http://ui:8085/api/ion_sync", json=payload)
+        response = requests.post(f"http://{ui_host}:8085/api/ion_sync", json=payload)
         response.raise_for_status()
     except Exception as e:
         logging.error(f"Sync to ION failed:\n{e}")
