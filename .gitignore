@@ -5,3 +5,5 @@ __pycache__/
 *.db
 data/raw/*.xlsx
 data/output/*.json
+data/ion_inbox/*.xml
+data/output/*.db*
