@@ -81,6 +81,23 @@
                 <pre id="errorLogs" class="log-box">Waiting for orchestrator logs...</pre>
             </div>
             </div> <!-- Close dashboard-grid -->
+ 
+            <div class="glass-panel">
+                <h3>Infor ION Inbox (File Connection Point) <span id="ionBODCount" class="badge">0 BODs</span></h3>
+                <div class="ion-inbox-layout" style="display: grid; grid-template-columns: 280px 1fr; gap: 2rem; min-height: 250px;">
+                    <!-- List of XML files -->
+                    <div class="inbox-list" id="inboxFileList" style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 350px; overflow-y: auto; padding-right: 0.5rem;">
+                        <p style="color: #8b949e; font-size: 0.85rem; text-align: center;">No BODs received yet.</p>
+                    </div>
+                    <!-- Raw XML preview -->
+                    <div class="inbox-preview" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="font-size: 0.85rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                            <span>Active BOD: <strong id="activeBODName" style="color: var(--accent);">None</strong></span>
+                        </div>
+                        <pre id="bodPreview" class="log-box xml-box" style="margin: 0; height: 300px; color: #7ee787; font-size: 0.8rem;">Select an XML BOD file to preview its content.</pre>
+                    </div>
+                </div>
+            </div>
 
             <div class="glass-panel">
                 <h3>Extracted Data Preview <span id="itemCount" class="badge">0 items</span></h3>

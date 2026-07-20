@@ -194,7 +194,13 @@ def delete_menu():
     for f in glob.glob(os.path.join(raw_dir, "*.xlsx")):
         os.remove(f)
         
-    return {"status": "success", "message": "Menu deleted."}
+    # Clear ION inbox
+    inbox_dir = os.path.join(BASE_DIR, "data", "ion_inbox")
+    if os.path.exists(inbox_dir):
+        for f in glob.glob(os.path.join(inbox_dir, "*.xml")):
+            os.remove(f)
+            
+    return {"status": "success", "message": "Menu and ION inbox deleted."}
 
 @app.post("/api/simulate_update")
 def simulate_update():
@@ -219,6 +225,26 @@ def simulate_update():
         return {"status": "success", "message": "Prices bumped by $1.00."}
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+@app.get("/api/ion_inbox")
+def get_ion_inbox():
+    inbox_dir = os.path.join(BASE_DIR, "data", "ion_inbox")
+    os.makedirs(inbox_dir, exist_ok=True)
+    files = sorted([f for f in os.listdir(inbox_dir) if f.endswith('.xml')], reverse=True)
+    return {"files": files}
+
+@app.get("/api/ion_inbox/{filename}")
+def get_ion_inbox_file(filename: str):
+    inbox_dir = os.path.join(BASE_DIR, "data", "ion_inbox")
+    file_path = os.path.join(inbox_dir, filename)
+    # prevent directory traversal attacks
+    if not os.path.abspath(file_path).startswith(os.path.abspath(inbox_dir)):
+        return {"status": "error", "message": "Access denied."}
+        
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            return {"content": f.read()}
+    return {"status": "error", "message": "File not found."}
 
 if __name__ == "__main__":
     print("Starting Dashboard Server on http://localhost:8085")

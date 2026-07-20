@@ -101,8 +101,89 @@ triggerBtn.addEventListener('click', async () => {
 });
 
 // Start polling
-setInterval(fetchStatus, 1000);
+setInterval(() => {
+    fetchStatus();
+    fetchIONInbox();
+}, 1000);
 fetchStatus();
+fetchIONInbox();
+
+// Poll ION Inbox
+let currentBODs = [];
+let activeBOD = null;
+
+async function fetchIONInbox() {
+    try {
+        const response = await fetch('/api/ion_inbox');
+        const data = await response.json();
+        
+        document.getElementById('ionBODCount').innerText = `${data.files.length} BODs`;
+        
+        if (JSON.stringify(data.files) !== JSON.stringify(currentBODs)) {
+            currentBODs = data.files;
+            renderInboxList(data.files);
+        }
+    } catch(e) {
+        console.error("Error fetching ION inbox:", e);
+    }
+}
+
+function renderInboxList(files) {
+    const list = document.getElementById('inboxFileList');
+    if (files.length === 0) {
+        list.innerHTML = '<p style="color: #8b949e; font-size: 0.85rem; text-align: center;">No BODs received yet.</p>';
+        return;
+    }
+    
+    list.innerHTML = '';
+    files.forEach(file => {
+        const btn = document.createElement('button');
+        btn.style.width = '100%';
+        btn.style.padding = '0.6rem 0.75rem';
+        btn.style.background = file === activeBOD ? 'rgba(59, 130, 246, 0.2)' : 'rgba(255, 255, 255, 0.03)';
+        btn.style.border = file === activeBOD ? '1px solid var(--accent)' : '1px solid rgba(255, 255, 255, 0.1)';
+        btn.style.borderRadius = '6px';
+        btn.style.cursor = 'pointer';
+        btn.style.color = '#c9d1d9';
+        btn.style.textAlign = 'left';
+        btn.style.fontSize = '0.8rem';
+        btn.style.transition = 'all 0.2s ease';
+        btn.innerHTML = `📄 ${file}`;
+        
+        btn.addEventListener('click', () => loadBOD(file));
+        list.appendChild(btn);
+    });
+}
+
+async function loadBOD(filename) {
+    activeBOD = filename;
+    document.getElementById('activeBODName').innerText = filename;
+    
+    // Update button background styling locally for responsiveness
+    document.querySelectorAll('#inboxFileList button').forEach(btn => {
+        if (btn.innerText.includes(filename)) {
+            btn.style.background = 'rgba(59, 130, 246, 0.2)';
+            btn.style.borderColor = 'var(--accent)';
+        } else {
+            btn.style.background = 'rgba(255, 255, 255, 0.03)';
+            btn.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+        }
+    });
+    
+    try {
+        const response = await fetch(`/api/ion_inbox/${filename}`);
+        const data = await response.json();
+        
+        const preview = document.getElementById('bodPreview');
+        if (data.content) {
+            preview.textContent = data.content;
+        } else {
+            preview.textContent = "Error loading content.";
+        }
+    } catch(e) {
+        console.error("Error loading BOD:", e);
+    }
+}
 
 // Chat UI Logic
 const chatInput = document.getElementById('chatInput');

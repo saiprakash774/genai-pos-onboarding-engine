@@ -240,6 +240,79 @@ def sync_to_ion(state: PipelineState) -> PipelineState:
         logging.error(f"Neo4j Database Sync failed: {ne}")
         # Note: We log the error but don't fail the pipeline, allowing local mock fallback to work
         
+    # Generate Sync.ItemMaster XML BOD payload for Infor ION Inbox
+    try:
+        import xml.etree.ElementTree as ET
+        from xml.dom import minidom
+        from datetime import datetime
+        
+        root = ET.Element("SyncItemMaster", {
+            "xmlns": "http://schema.infor.com/InforOAGIS/2",
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+        })
+        
+        app_area = ET.SubElement(root, "ApplicationArea")
+        sender = ET.SubElement(app_area, "Sender")
+        logical_id = ET.SubElement(sender, "LogicalID")
+        logical_id.text = "lid://infor.pos.starbucks"
+        comp_id = ET.SubElement(sender, "ComponentID")
+        comp_id.text = "POSOnboardingEngine"
+        
+        creation_dt = ET.SubElement(app_area, "CreationDateTime")
+        creation_dt.text = datetime.utcnow().isoformat() + "Z"
+        
+        bod_id = ET.SubElement(app_area, "BODID")
+        bod_id.text = f"bod-item-master-{int(time.time())}"
+        
+        data_area = ET.SubElement(root, "DataArea")
+        sync = ET.SubElement(data_area, "Sync")
+        action_criteria = ET.SubElement(sync, "ActionCriteria")
+        action_expr = ET.SubElement(action_criteria, "ActionExpression", {"actionCode": "Replace"})
+        
+        for item in payload:
+            item_master = ET.SubElement(data_area, "ItemMaster")
+            header = ET.SubElement(item_master, "ItemMasterHeader")
+            
+            drink_name = item.get("Base_Drink", "Unknown")
+            size_val = item.get("Size", "Regular")
+            sku_clean = drink_name.lower().replace(" ", "-").replace(",", "")
+            size_clean = size_val.lower()
+            
+            item_id = ET.SubElement(header, "ItemID")
+            item_id.text = f"sku-{sku_clean}-{size_clean}"
+            
+            desc = ET.SubElement(header, "Description")
+            desc.text = drink_name
+            
+            note = ET.SubElement(header, "Note")
+            note.text = f"Ingested via Agentic Pipeline. Category: {item.get('Category')}"
+            
+            props = [
+                ("Category", item.get("Category", "")),
+                ("Size", size_val),
+                ("BasePrice", str(item.get("Base_Price", "0.0"))),
+                ("AllowedModifiers", ", ".join(item.get("Allowed_Modifiers", [])))
+            ]
+            
+            for name, value in props:
+                prop = ET.SubElement(header, "Property")
+                nv = ET.SubElement(prop, "NameValue", {"name": name})
+                nv.text = value
+                
+        xml_str = ET.tostring(root, encoding="utf-8")
+        parsed_xml = minidom.parseString(xml_str)
+        pretty_xml = parsed_xml.toprettyxml(indent="  ")
+        
+        inbox_dir = os.path.join(BASE_DIR, "data", "ion_inbox")
+        os.makedirs(inbox_dir, exist_ok=True)
+        filename = f"sync_item_master_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xml"
+        file_path = os.path.join(inbox_dir, filename)
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(pretty_xml)
+        logging.info(f"Successfully generated Sync.ItemMaster XML BOD in ION inbox: {filename}")
+    except Exception as xe:
+        logging.error(f"Failed to generate Sync.ItemMaster XML BOD: {xe}")
+        
     logging.info("Successfully synced to Infor ION. Pipeline Complete.")
     return {"status": "synced", "error_logs": "", "retry_count": state.get("retry_count", 0)}
 
