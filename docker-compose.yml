@@ -26,6 +26,8 @@ services:
       context: .
       dockerfile: Dockerfile.service
     container_name: ui
+    env_file:
+      - .env
     ports:
       - "8085:8085"
     volumes:
