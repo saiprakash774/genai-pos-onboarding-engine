@@ -46,6 +46,53 @@ document.getElementById('launch-sample-btn').addEventListener('click', () => {
     loadMenuAndLaunch();
 });
 
+// Template Picker
+async function loadTemplates() {
+    try {
+        const res = await fetch('/api/templates');
+        const data = await res.json();
+        const list = document.getElementById('template-list');
+        if (!data.templates || data.templates.length === 0) {
+            list.innerHTML = '<p style="color: var(--text-muted); font-size: 0.85rem; text-align: center;">No templates available yet.</p>';
+            return;
+        }
+        list.innerHTML = '';
+        data.templates.forEach(filename => {
+            const btn = document.createElement('button');
+            btn.className = 'template-btn';
+            btn.innerHTML = `
+                <span class="file-icon">📊</span>
+                <span class="file-name">${filename}</span>
+                <span class="load-label">Load →</span>
+            `;
+            btn.addEventListener('click', () => loadTemplate(filename));
+            list.appendChild(btn);
+        });
+    } catch (e) {
+        console.error('Failed to load templates:', e);
+    }
+}
+
+async function loadTemplate(filename) {
+    document.getElementById('drop-zone').classList.add('hidden');
+    document.querySelector('.template-picker').classList.add('hidden');
+    document.getElementById('pipeline-status').classList.remove('hidden');
+    
+    try {
+        await fetch('/api/load_template', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename })
+        });
+        pollPipeline();
+    } catch (e) {
+        alert("Failed to load template.");
+    }
+}
+
+// Load templates on page init
+loadTemplates();
+
 async function pollPipeline() {
     const label = document.getElementById('currentStateLabel');
     const interval = setInterval(async () => {

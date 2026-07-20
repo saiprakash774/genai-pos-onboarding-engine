@@ -78,6 +78,28 @@ async def upload_file(file: UploadFile = File(...)):
         f.write(await file.read())
     return {"status": "success", "message": "File uploaded successfully. Orchestrator will pick it up."}
 
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'data', 'templates')
+
+@app.get("/api/templates")
+def list_templates():
+    os.makedirs(TEMPLATES_DIR, exist_ok=True)
+    templates = [f for f in os.listdir(TEMPLATES_DIR) if f.endswith('.xlsx')]
+    return {"templates": templates}
+
+@app.post("/api/load_template")
+def load_template(request_body: dict):
+    filename = request_body.get("filename", "")
+    template_path = os.path.join(TEMPLATES_DIR, filename)
+    if not os.path.exists(template_path):
+        return {"status": "error", "message": f"Template '{filename}' not found."}
+    
+    import shutil
+    raw_dir = os.path.join(BASE_DIR, "data", "raw")
+    os.makedirs(raw_dir, exist_ok=True)
+    dest_path = os.path.join(raw_dir, "Starbucks_Infor_POS_Foundation.xlsx")
+    shutil.copy2(template_path, dest_path)
+    return {"status": "success", "message": f"Template '{filename}' loaded. Orchestrator will pick it up."}
+
 @app.get("/api/menu")
 def get_full_menu():
     parsed_path = os.path.join(DATA_OUT_DIR, "menu_parsed.json")
