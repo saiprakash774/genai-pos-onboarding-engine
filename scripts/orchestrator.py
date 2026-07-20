@@ -4,7 +4,7 @@ import subprocess
 import logging
 import json
 from typing import TypedDict, Annotated
-from watchdog.observers import Observer
+from watchdog.observers.polling import PollingObserver as Observer
 from watchdog.events import FileSystemEventHandler
 
 from langgraph.graph import StateGraph, END
